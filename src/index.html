@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>MediaSoup App</title>
+</head>
+<body>
+    <div  class="px-4 py-16 flex min-w-full min-h-full">
+    <div>
+    <div>
+<video class="" id="localVideo" controls autoplay playsinline></video>
+</div>
+<div class="flex">
+<div class="flex flex-col mx-2">
+    <button disabled id="btn_webcam" class="bg-blue-500 text-white font-bold py-2 px-4 mt-5 rounded h-12 w-32">Cam Status
+    </button>
+    <span id="webcam_status"></span>
+    </div>
+<div class="flex flex-col mx-2">
+<button disabled id="btn_screen" class="bg-blue-500 text-white font-bold py-2 px-4 mt-5 rounded h-12 w-52">Screen Status</button>
+<span id="screen_status"></span>
+</div>
+<div class="flex flex-col mx-2">
+    <button disabled id="btn_subscribe" class="bg-blue-500 text-white font-bold py-2 px-4 mt-5 rounded h-12 w-52">Subscribe Status</button>
+    <span id="subscribe_status"></span>
+</div>
+</div>
+</div>
+    
+    <div>
+        <video class="w-full" id="remoteVideo" controls autoplay playsinline></video>
+    </div>
+
+</body>
+</html>
